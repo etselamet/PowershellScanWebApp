@@ -16,7 +16,7 @@ PS C:\user> PowerShell.exe -ExecutionPolicy Bypass -File .\webAppScan.ps1
 ```
 Script takes two argument: ipRange and port. 
 
-ipRange specifies the IP addresses to be scanned.
+ipRange(required) specifies the IP addresses to be scanned.
 For example: "-ipRange 192.168.10.100/50" means scan with range of 192.168.10.100 to 192.168.10.150 .
 
 port is optional. Default scan ports are 80, 443, 8080 and 8081. If you give "-port 80". Script will scan only 80 port, or "-port 80, 1010 and 445", then script only will scan 80, 1010 and 445 ports.
