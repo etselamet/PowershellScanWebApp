@@ -21,7 +21,7 @@ For example: "-ipRange 192.168.10.100/50" means scan with range of 192.168.10.10
 
 port is optional. Default scan ports are 80, 443, 8080 and 8081. If you give "-port 80". Script will scan only 80 port, or "-port 80, 1010 and 445", then script only will scan 80, 1010 and 445 ports.
 
-After scanning, script creates (timestamp).txt file for detailed information about process. Report file consist of open or close information about scanning IP and port adress and if there is a web application running on this port, script will exract server information, protocol version and last modified date otomatically.
+Script scans given IP and port adresses and if port is open, script try to connect with a web-request. After scanning, script creates (timestamp).txt file for detailed information about process. Report file consist of open or close information about scanning IP and port adress and if there is a web application running on this port, script will exract server information, protocol version and last modified date otomatically.
 
 ## Example report file format
 
